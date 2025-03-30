@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homenaje al Parkour</title>
+    <link rel="stylesheet" href="Parkour.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imagenes/David_Belle.jpg" alt="Pollo" class="logo">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Más</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+            <button id="abrirModalLogin">Login</button>
+            <button id="abrirModalRegister">Register</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="historia">
+            <h1>Historia del Parkour</h1>
+            <p>
+                El Parkour es una disciplina física y mental que consiste en moverse de un punto a otro de la manera más eficiente posible,
+                utilizando únicamente el cuerpo humano. Sus orígenes se remontan a finales de los años 80 en Francia, cuando
+                David Belle y un grupo de amigos comenzaron a desarrollar lo que hoy conocemos como Parkour. Inspirado en técnicas de
+                entrenamiento militar y en la filosofía del "método natural" de Georges Hébert, el Parkour enfatiza la fluidez,
+                la adaptabilidad y la superación de obstáculos tanto físicos como mentales.
+            </p>
+            <p>
+                Con el tiempo, el Parkour se ha expandido por todo el mundo, convirtiéndose en un movimiento global con una comunidad
+                dedicada al desarrollo de habilidades físicas, la creatividad y la autosuperación.
+            </p>
+        </section>
+
+        <section class="video">
+            <h2>Vea esta belleza</h2>
+            <iframe
+                width="560" height="315" src="https://www.youtube.com/embed/88EQ69-1N64?si=XX-QBzOOTUgfEjQH"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="gallery">
+            <h2>Cositas del Parkour</h2>
+            <img src="imagenes/Lisses.jpg" alt="Lisses">
+            <img src="imagenes/Lazy.jpg" alt="Lazy">
+            <img src="imagenes/backEstirado.jpg" alt="backEstirado">
+        </section>
+    </main>
+
+    <footer>
+        <p>Mi página de PK :D</p>
+    </footer>
+
+    <div id="modalLogin" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" data-modal="modalLogin">&times;</span>
+            <h2>Login</h2>
+            <label for="usuarioLogin">Usuario</label>
+            <input type="text" id="usuarioLogin" placeholder="Ingrese su usuario">
+            <label for="contraseniaLogin">Contraseña</label>
+            <input type="password" id="contraseniaLogin" placeholder="Ingrese su contraseña">
+            <button class="cerrar" data-modal="modalLogin">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="modalRegister" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" data-modal="modalRegister">&times;</span>
+            <h2>Registro</h2>
+            <label for="usuarioRegister">Usuario</label>
+            <input type="text" id="usuarioRegister" placeholder="Ingrese su usuario">
+            <label for="emailRegister">Correo</label>
+            <input type="email" id="emailRegister" placeholder="Ingrese su correo">
+            <label for="contraseniaRegister">Contraseña</label>
+            <input type="password" id="contraseniaRegister" placeholder="Ingrese su contraseña">
+            <button class="cerrar" data-modal="modalRegister">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="Parkour.js"></script>
+</body>
+</html>
